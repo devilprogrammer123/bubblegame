@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(122, 204, 122);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: larger;
+
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 30%;
+
+}
+.elem h2{
+    color: white;
+}
+.ptop{
+    width: 100%;
+    height: 100px;
+    padding: 0px 20%;
+     background-color: rgb(56, 114, 56);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.pbottom{
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.bubble{
+    width: 60px;
+    height: 60px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.bubble:hover{
+    background-color: rgb(121, 187, 209);
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .panel{
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .elem{
+        width: auto;
+    }
+    .ptop h2{
+        font-weight: 400;
+    }
+    .ptop{
+        padding: 0 5px;
+        font-size: 14px;
+    }
+
+
+    .bubble{
+        width: 50px;
+        height: 50px;
+    }
+
+    .pbottom{
+        padding: 10px;
+        display: grid;
+        grid-template-columns:auto auto auto auto auto auto;
+    }
+}
