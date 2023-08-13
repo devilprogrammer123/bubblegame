@@ -54,12 +54,17 @@ html,body{
 .pbottom{
     width: 100%;
     height: calc(100% - 100px);
-    padding: 20px;
-    display: flex;
+    padding: 0px 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns:repeat(auto-fill,60px);
+    grid-template-rows:repeat(auto-fill,60px);
     align-items: center;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .bubble{
     width: 60px;
@@ -79,7 +84,7 @@ html,body{
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px), (max-height:400px) {
 
     .panel{
         border-radius: 0;
@@ -106,6 +111,7 @@ html,body{
     .pbottom{
         padding: 10px;
         display: grid;
-        grid-template-columns:auto auto auto auto auto auto;
+        grid-template-columns:repeat(auto-fill,50px);
+        grid-template-rows:repeat(auto-fill,50px);
     }
 }
